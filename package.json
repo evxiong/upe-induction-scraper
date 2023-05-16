@@ -1,0 +1,16 @@
+{
+  "name": "upe",
+  "version": "1.0.0",
+  "description": "Scraper for resume and test bank requirements.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "puppeteer": "^19.11.1"
+  }
+}
