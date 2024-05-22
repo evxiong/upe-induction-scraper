@@ -21,7 +21,7 @@ async function scrape() {
 
     const tests = await page.$$eval('tbody>tr>td:nth-child(13)', tests => {
         return tests.map(test => {
-            if (test.classList.contains("override"))
+            if (test.classList.contains("completed"))
                 return true
             else
                 return false
@@ -30,7 +30,7 @@ async function scrape() {
 
     const resumes = await page.$$eval('tbody>tr>td:nth-child(5)', resumes => {
         return resumes.map(resume => {
-            if (resume.classList.contains("override"))
+            if (resume.classList.contains("completed"))
                 return true
             else
                 return false
